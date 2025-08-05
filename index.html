@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikanos | La Nueva Era del Boxeo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+        header { background: #111; color: #fff; padding: 30px 0 20px 0; text-align: center; }
+        nav { background: #222; display: flex; justify-content: center; gap: 30px; padding: 10px 0; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #e63946; }
+        .hero { background: #222 url('images/hero.jpg') center/cover no-repeat; color: #fff; padding: 60px 20px 80px 20px; text-align: center; }
+        .hero h1 { font-size: 2.8em; margin-bottom: 10px; }
+        .hero p { font-size: 1.3em; margin-bottom: 30px; }
+        .cta-btn { background: #e63946; color: #fff; border: none; padding: 15px 40px; font-size: 1.2em; border-radius: 5px; cursor: pointer; text-decoration: none; }
+        .cta-btn:hover { background: #d90429; }
+        .programs { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 30px; }
+        .programs h2 { text-align: center; margin-bottom: 30px; }
+        .program-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .program { flex: 1 1 250px; background: #f2f2f2; border-radius: 8px; padding: 20px; min-width: 220px; }
+        .program h3 { margin-top: 0; color: #e63946; }
+        .contact { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 30px; }
+        .contact h2 { text-align: center; margin-bottom: 20px; }
+        .contact form { display: grid; gap: 15px; }
+        .contact input, .contact textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; }
+        .contact button { background: #e63946; color: #fff; border: none; padding: 12px 0; font-size: 1.1em; border-radius: 5px; cursor: pointer; }
+        .contact button:hover { background: #d90429; }
+        .location { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 30px; text-align: center; }
+        .footer { background: #222; color: #fff; text-align: center; padding: 25px 10px 10px 10px; margin-top: 40px; }
+        .footer a { color: #e63946; text-decoration: none; margin: 0 10px; }
+        .social { margin-top: 10px; }
+        .social a { margin: 0 8px; display: inline-block; }
+        @media (max-width: 700px) {
+            .program-list { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/fulllogo.png" alt="Ikanos Logo" style="height:60px; margin-bottom:10px;">
+        <h1>LA NUEVA ERA DEL BOXEO</h1>
+        <p>Se parte de nuestro gimnasio y experimenta la nueva era del boxeo</p>
+        <p><strong>Inauguración 29 de Marzo de 2025</strong></p>
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/docs/privacidad.html">Privacidad</a>
+        <a href="/docs/terminos.html">Términos</a>
+        <a href="https://forms.office.com/r/w3GtmMj3qs" target="_blank">Únete al equipo</a>
+    </nav>
+    <section class="hero">
+        <h1>Alcanza tu potencial</h1>
+        <p>Nuestros experimentados coaches están listos para ayudarte a encontrar el mejor programa de entrenamiento que se adapte a tus necesidades.</p>
+        <a class="cta-btn" href="https://forms.office.com/r/w3GtmMj3qs" target="_blank">Reservar lugar</a>
+    </section>
+    <section class="programs">
+        <h2>Escoge el mejor plan</h2>
+        <div class="program-list">
+            <div class="program">
+                <h3>Escuela de boxeo</h3>
+                <p>Aprende los fundamentos básicos sobre boxeo, técnica, defensa personal, coordinación y seguridad en ti mismo, junto a una excelente preparación física.</p>
+            </div>
+            <div class="program">
+                <h3>Amateur</h3>
+                <p>Entrenamiento de nivel superior, preparado para realizar combates de entrenamiento supervisados por nuestros coaches.</p>
+            </div>
+            <div class="program">
+                <h3>Elite</h3>
+                <p>Entrenamientos enfocados para competir en boxeo amateur, alto rendimiento, boxeo técnico, fuerza y resistencia.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" name="firstname" placeholder="Nombre" required>
+            <input type="text" name="lastname" placeholder="Apellido" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="phone" placeholder="Teléfono" required>
+            <textarea name="message" rows="3" placeholder="Mensaje" required></textarea>
+            <button type="submit">Consultar</button>
+        </form>
+    </section>
+    <section class="location">
+        <h2>Ubicación</h2>
+        <p>Av. Paseo de las Moras 2080, Plaza Comercial "Los Huertos", local 6. San José el Alto, Querétaro, Qro.</p>
+        <a class="cta-btn" href="https://maps.app.goo.gl/4kDRo7iBqD7aB7xn6" target="_blank">Abrir mapa</a>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/ikanosbox" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:24px;"></a>
+            <a href="https://www.instagram.com/ikanosbox/" target="_blank"><img src="images/instagram.png" alt="Instagram" style="height:24px;"></a>
+            <a href="https://maps.app.goo.gl/4kDRo7iBqD7aB7xn6" target="_blank"><img src="images/map.png" alt="Ubicación" style="height:24px;"></a>
+        </div>
+        <p>© 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
